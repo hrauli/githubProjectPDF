@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JPEG to PDF Converter</title>
+</head>
+<body>
+  <input type="file" id="fileInput" accept="image/jpeg" />
+  <button id="convertBtn">Convert to PDF</button>
+  <div>
+    <h2>Selected Image</h2>
+    <img id="selectedImage" style="max-width: 400px;" />
+  </div>
+  <div id="pdfContainer" style="display: none;">
+    <h2>Converted PDF</h2>
+    <embed id="pdfEmbed" width="800px" height="600px" type="application/pdf" />
+    <a id="downloadLink" download="converted.pdf"><button>Download PDF</button></a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="converter.js"></script>
+</body>
+</html>
